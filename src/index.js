@@ -2,6 +2,7 @@ import refs from './js/refs';
 import ApiService from './js/apiService';
 import cardTpl from './templates/cardTpl.hbs';
 import LoadMoreBtn from './js/loadMoreBtn';
+import onOpenModal from './js/onOpenModal';
 import { error, defaultModules } from '@pnotify/core/dist/PNotify.js';
 import * as PNotifyMobile from '@pnotify/mobile/dist/PNotifyMobile.js';
 import '@pnotify/core/dist/PNotify.css';
@@ -15,6 +16,7 @@ const loadMoreBtn = new LoadMoreBtn({
 const apiService = new ApiService();
 
 refs.searcForm.addEventListener('submit', onSearch);
+refs.cardsContainer.addEventListener('click', onOpenModal);
 loadMoreBtn.refs.button.addEventListener('click', fetchCards);
 
 function onSearch(e) {

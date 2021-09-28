@@ -65,10 +65,12 @@ ul {
   left: -17px;
   font-size: 14px;
 }
-
 .is-hidden {
   display: none;
 }
 .disabled {
   background-color: rgb(255, 131, 131);
+}
+.img:hover {
+  cursor: pointer;
 }

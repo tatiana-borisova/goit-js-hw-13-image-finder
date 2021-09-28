@@ -1,6 +1,12 @@
 {{#each this}}
   <div class='photo-card'>
-    <img src='{{webformatURL}}' alt='' width='200' class='img' />
+    <img
+      src='{{webformatURL}}'
+      alt='photo'
+      width='200'
+      class='img'
+      data-action='{{largeImageURL}}'
+    />
 
     <div class='stats'>
       <div class='likes'>
