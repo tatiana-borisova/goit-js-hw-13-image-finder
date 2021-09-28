@@ -43,6 +43,10 @@ function appendCardsMarkup(cards) {
   if (refs.cardsContainer.innerHTML === '') {
     throw new Error();
   }
+  refs.cardsContainer.scrollIntoView({
+    behavior: 'smooth',
+    block: 'end',
+  });
 }
 
 function clearCardsContainer() {
